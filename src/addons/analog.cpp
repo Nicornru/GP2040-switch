@@ -11,7 +11,7 @@
 
 #define ADC_MAX ((1 << 12) - 1)
 #define ANALOG_CENTER 0.5f // 0.5f is center
-#define ANALOG_MAX 1.0f    // 1.0f is max
+#define ANALOG_MAX 0.8f    // 0.8f is max
 
 bool AnalogInput::available() {
     return Storage::getInstance().getAddonOptions().analogOptions.enabled;
